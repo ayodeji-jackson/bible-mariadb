@@ -10,6 +10,4 @@ services:
       - ./initdb.d:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
-    db:
-      image: mysql
-      user: "1000"
+    user: "1000"
